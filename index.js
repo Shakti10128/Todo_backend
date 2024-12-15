@@ -27,7 +27,6 @@ app.use(express.json());
 app.use(cors({
     origin: process.env.CLIENT, // Replace with your frontend's deployed domain
     methods: ["GET", "POST", "PUT", "DELETE"], // Specify allowed HTTP methods
-    credentials: true, // Allow credentials (e.g., cookies, authorization headers)
 }));
 
 
