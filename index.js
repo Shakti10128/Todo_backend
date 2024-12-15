@@ -25,7 +25,7 @@ app.use(express.json());
 // allow all origin to req the api
 // Use cors to allow requests from your frontend
 app.use(cors({
-    origin: process.env.CLIENT, // Replace with your frontend's deployed domain
+    origin: '*', // Replace with your frontend's deployed domain
     methods: ["GET", "POST", "PUT", "DELETE"], // Specify allowed HTTP methods
 }));
 
