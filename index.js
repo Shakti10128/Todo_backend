@@ -21,8 +21,14 @@ const app = express();
 app.use(cookieParser());
 // to parse the json data from req.body
 app.use(express.json());
+
 // allow all origin to req the api
-app.use(cors());
+// Use cors to allow requests from your frontend
+app.use(cors({
+    origin: process.env.CLIENT, // Replace with your frontend's deployed domain
+    methods: ["GET", "POST", "PUT", "DELETE"], // Specify allowed HTTP methods
+    credentials: true, // Allow credentials (e.g., cookies, authorization headers)
+}));
 
 
 
