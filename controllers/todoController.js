@@ -52,6 +52,7 @@ export const getAllTasks = async (req, res) => {
         // Successful response with all tasks
         return res.status(200).json({
             success: true,
+            message:"Tasks fetched successfully",
             tasks
         });
     } catch (error) {
