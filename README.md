@@ -70,7 +70,7 @@ Add your MongoDB URL
   POST /api/tasks
 ```
 
-| Reb Body | Type     | Description                       |
+| Req Body | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `title`      | `string` | **Required**|
 | `description`      | `string` | **Required** |
@@ -82,7 +82,7 @@ Add your MongoDB URL
   PUT /api/${id}
 ```
 
-| Reb body | Type     | Description                       |
+| Req body | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `status`      | `string` | **Required**|
 
